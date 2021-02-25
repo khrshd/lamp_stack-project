@@ -1,0 +1,57 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+#mp2x-ansible
+#domain=home.local
+[uos1]
+192.168.0.188
+[uos2]
+192.168.0.189
+
+#[ftp]
+#192.168.0.213
+#[nfs]
+#192.168.0.214
+#[samba]
+#192.168.0.215
+#[db]
+#192.168.0.216
+#[wiki]
+#192.168.0.217
+#[ansible]
+#192.168.0.212
+
+#[db-wiki:children]
+#wiki
+#db
+
+[lamp-uos:children]
+uos1
+uos2
+
+#[t-all:children]
+#db
+#ftp
+#nfs
+#samba
+#wiki
+
+#[all:children]
+#db-wiki
+#ansible
+#ftp
+#nfs
+#samba
+
+#[nfs-clients:children]
+#db
+#ftp
+#samba
+#wiki
