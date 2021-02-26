@@ -8,6 +8,6 @@ MySQL database will be installed automatically but has to be finalized manually 
 Installation of PHP was done to max possiblity but might have some extra work both, finishing up in terms of installation as well as further manual setup of MediaWiki part.
 Issues with installation was mainly concerned regarding the ubuntu repo unavailability as the time of this writing with following error code:
 "  Temporary failure resolving 'us.archive.ubuntu.com'", "Ign:7 http://security.ubuntu.com/ubuntu focal-updates/main amd64 apache2-data all 2.4.41-4ubuntu3.1"
-This playbook was functional when tested with centos 7 with slight modifications.
+This playbook was functional when tested with centos 7 with slight modifications, time on physical PC: 2.34 am, 2.26.2021 Eastern Time as my VM's time might be off when pushing.
 
 The playbook was created based on DNS rather than purely using IP address and static host file which is the inventory file of Ansible.
