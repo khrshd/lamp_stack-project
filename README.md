@@ -10,4 +10,4 @@ Issues with installation was mainly concerned regarding the ubuntu repo unavaila
 "  Temporary failure resolving 'us.archive.ubuntu.com'", "Ign:7 http://security.ubuntu.com/ubuntu focal-updates/main amd64 apache2-data all 2.4.41-4ubuntu3.1"
 This playbook was functional when tested with centos 7 with slight modifications.
 
-The playbook was created based on DNS rather than purely using IP address.
+The playbook was created based on DNS rather than purely using IP address and static host file which is the inventory file of Ansible.
